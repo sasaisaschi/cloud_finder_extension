@@ -3,9 +3,7 @@
     "name": "Cloud Finder",
     "version": "1.0",
     "description": "Zeigt Top-10 Cloud-Anbieter mit Logo & Link",
-    "permissions": [
-        "activeTab"
-    ],
+    "permissions": ["activeTab"],
     "action": {
         "default_popup": "popup.html",
         "default_icon": {
