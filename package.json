@@ -1,11 +1,11 @@
-/* package.json */
 {
   "name": "cloud-finder-extension",
   "version": "1.0.0",
   "description": "Chrome Extension zeigt Top-10 Cloud-Anbieter mit Logo & Link",
-  "author": "Sascha",
+  "author": "Sascha Riemenschneider",
   "license": "MIT",
   "main": "src/popup.js",
+  "type": "module",
   "scripts": {
     "test": "jest",
     "lint:js": "eslint src --ext .js",
@@ -25,7 +25,10 @@
     "jest": "^30.0.4",
     "jest-environment-jsdom": "^30.0.4",
     "stylelint": "^16.21.1",
+    "stylelint-config-standard": "^38.0.0",
     "tailwindcss": "^4.1.11"
+  },
+  "dependencies": {
+    "eslint-plugin-jest": "^29.0.1"
   }
 }
-

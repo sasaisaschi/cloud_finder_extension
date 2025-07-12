@@ -11,6 +11,7 @@ document.body.innerHTML = html;
 
 // Now, require the script to execute it in the JSDOM context
 require('../src/popup.js');
+const test = require("node:test");
 
 describe('Cloud Finder Extension', () => {
     test('should create a list of 10 cloud providers', () => {
