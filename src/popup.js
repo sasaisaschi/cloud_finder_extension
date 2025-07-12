@@ -51,4 +51,6 @@ if (typeof document !== 'undefined' && document.readyState === 'complete') {
     renderCloudList();
 }
 
-module.exports = { clouds, renderCloudList };
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = { clouds, renderCloudList };
+}

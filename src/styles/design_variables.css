@@ -1,6 +1,10 @@
 /* design_variables.css */
 
 /* Design-System-Variablen für Cloud Finder Extension – Dark und Light Mode kombiniert */
+body {
+    font-family: var(--font-family-body), sans-serif;
+    color: var(--color-text);
+}
 
 :root {
     /* --- Globale Basisvariablen --- */

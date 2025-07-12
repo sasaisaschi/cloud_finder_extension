@@ -1,10 +1,10 @@
 // .stylelintrc.cjs
 module.exports = {
-  extends: "stylelint-config-standard",
+  extends: 'stylelint-config-standard',
   rules: {
-    // deine Custom-Rules, z.B.:
-    "indentation": 2,
-    "string-quotes": "double"
+    // Erlaube Vendor-Präfix für unseren Glas-Effekt
+    'property-no-vendor-prefix': [true, {
+      ignoreProperties: ['backdrop-filter']
+    }]
   }
 };
-

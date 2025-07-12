@@ -1,31 +1,34 @@
+// tests/popup.test.js
 /**
  * @jest-environment jsdom
  */
 
-const fs = require('fs');
-const path = require('path');
-
-// Load the HTML file into the JSDOM environment
-const html = fs.readFileSync(path.resolve(__dirname, '../popup.html'), 'utf8');
-document.body.innerHTML = html;
-
-// Now, require the script to execute it in the JSDOM context
-require('../src/popup.js');
-const test = require("node:test");
+const { renderCloudList, clouds } = require('../src/popup.js');
 
 describe('Cloud Finder Extension', () => {
+    beforeEach(() => {
+        // Sauberes DOM für jeden Test
+        document.body.innerHTML = `<div id="cloud-list"></div>`;
+    });
+
     test('should create a list of 10 cloud providers', () => {
+        renderCloudList();
         const cloudList = document.getElementById('cloud-list');
         expect(cloudList.children.length).toBe(10);
     });
 
     test('each cloud provider should have a link and an icon', () => {
-        const cloudItems = document.querySelectorAll('.cloud-item');
-        cloudItems.forEach(item => {
-            const link = item.href;
-            const icon = item.querySelector('img');
-            expect(link).not.toBe('');
-            expect(icon).not.toBeNull();
+        renderCloudList();
+        const items = Array.from(document.querySelectorAll('.cloud-item'));
+        expect(items.length).toBe(10);
+        items.forEach((item, i) => {
+            // Link-Element
+            expect(item.tagName).toBe('A');
+            expect(item.href).toContain(clouds[i].url);
+            // Icon-Img
+            const img = item.querySelector('img');
+            expect(img).toBeTruthy();
+            expect(img.src).toContain(clouds[i].icon);
         });
     });
 });

@@ -1,6 +1,17 @@
-/* style.css */
+/* src/styles/style.css */
 
-/* Styling für die Cloud-Items im Popup */
+#content {
+  background: rgb(255 255 255 / 40%);
+  border-radius: 12px;
+  padding: var(--spacing-md);
+  font-family: var(--font-family-body), sans-serif;
+  color: var(--color-text);
+}
+
+.cloud-item span {
+  font-family: var(--font-family-body), sans-serif;
+  color: var(--color-text);
+}
 
 .cloud-item {
   display: flex;
