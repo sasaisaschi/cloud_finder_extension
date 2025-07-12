@@ -1,79 +1,57 @@
-/*
- * Design-System-Variablen für Projekt: Cloud Finder Extension
- * Generiert durch den Copilot Issue-zu-Code-Generator
- * Primärer Modus: Dark Mode
- */
+/* design_variables.css */
+/* Design-System-Variablen für Cloud Finder Extension – Dark und Light Mode kombiniert */
 
 :root {
-    /* --- Globale Variablen (für beide Modi gültig oder Standard) --- */
-    --font-family-heading: 'Roboto', 'Roboto Bold', sans-serif; /* Für Überschriften */
-    --font-family-body: 'Roboto', 'Roboto Regular', sans-serif;     /* Für Fließtext */
+    /* --- Globale Basisvariablen --- */
+    --font-family-heading: 'Roboto', sans-serif;
+    --font-family-body:   'Roboto', sans-serif;
 
-    /* --- Schriftgrößen (Beispiele) --- */
-    --font-size-base: 16px;
-    --font-size-lg: 20px;
-    --font-size-xl: 24px;
+    --font-size-base:  16px;
+    --font-size-lg:    20px;
+    --font-size-xl:    24px;
 
-    /* --- Abstände (Beispiele) --- */
     --spacing-xs: 4px;
     --spacing-sm: 8px;
     --spacing-md: 16px;
     --spacing-lg: 24px;
     --spacing-xl: 32px;
 
-    /* --- Dein Markenzeichen: Box-Shadow --- */
-    --box-shadow-custom: 0 1px 0 rgb(255 255 255 / 50%) inset, 0 -2px 40px rgb(187 155 255 / 15%), 0 -2px 10px rgb(233 223 255 / 30%);
+    --box-shadow-custom: 0 1px 0 rgba(255,255,255,0.5) inset,
+    0 -2px 40px rgba(187,155,255,0.15),
+    0 -2px 10px rgba(233,223,255,0.3);
+
+    /* --- Dark Mode Standard (ohne media query) --- */
+    --color-primary:       #ff6432;
+    --color-primary-light: #ff8c66;
+    --color-primary-dark:  #cc4f27;
+
+    --color-secondary:     #4B0082;
+    --color-icon:          #ff6432;
+
+    --color-background:       #0B0121;
+    --color-background-alt:   #211732;
+    --color-text:             #d6cab6;
+    --color-text-secondary:   #7f8c8d;
+
+    --neutral-100: #ecf0f1;
+    --neutral-300: #bdc3c7;
+    --neutral-500: #95a5a6;
+    --neutral-700: #34495e;
+    --neutral-900: #2c3e50;
 }
 
-/* --- Dark Mode (Standard) --- */
-:root {
-    /* Primärfarben */
-    --color-primary: #ff6432;
-    --color-primary-light: #ff8c66; /* Leichtere Abstufung der Primärfarbe */
-    --color-primary-dark: #cc4f27;   /* Dunklere Abstufung der Primärfarbe */
-
-    /* Sekundärfarben / Akzente */
-    --color-secondary: #4B0082;
-    
-    /* NEUE ICON-FARBE */
-    --color-icon: #ff6432;
-
-    /* Hintergrund & Text */
-    --color-background: #0B0121;
-    --color-background-alt: #211732; /* Dein alternativer Hintergrund */
-    --color-text: #d6cab6;
-    --color-text-secondary: #7f8c8d; /* Sekundäre Textfarbe im Dark Mode */
-
-    /* Neutrale Farben / Graustufen für Dark Mode */
-    --color-neutral-100: #ecf0f1;
-    --color-neutral-300: #bdc3c7;
-    --color-neutral-500: #95a5a6;
-    --color-neutral-700: #34495e;
-    --color-neutral-900: #2c3e50;
-}
-
-/* --- Light Mode --- */
 @media (prefers-color-scheme: light) {
     :root {
-        /* Primärfarben (oft gleich oder leicht angepasst) */
-        --color-primary: #ff6432;
-        --color-primary-light: #ff8c66;
-        --color-primary-dark: #cc4f27;
+        /* Override für Light Mode */
+        --color-background:     #293549;
+        --color-background-alt: #dee8cd;
+        --color-text:           #293549;
+        --color-text-secondary: #7f8c8d;
 
-        /* Sekundärfarben / Akzente */
-        --color-secondary: #4B0082;
-
-        /* Hintergrund & Text */
-        --color-background: #293549;
-        --color-background-alt: #dee8cd; /* Invertierter alternativer Hintergrund */
-        --color-text: #f4fede;
-        --color-text-secondary: #7f8c8d; /* Sekundäre Textfarbe im Light Mode */
-
-        /* Neutrale Farben / Graustufen für Light Mode */
-        --color-neutral-100: #d3c1af;
-        --color-neutral-300: #cbb6a1;
-        --color-neutral-500: #6a5a59;
-        --color-neutral-700: #423c38;
-        --color-neutral-900: #130f0e;
+        --neutral-100: #d3c1af;
+        --neutral-300: #cbb6a1;
+        --neutral-500: #6a5a59;
+        --neutral-700: #423c38;
+        --neutral-900: #130f0e;
     }
 }

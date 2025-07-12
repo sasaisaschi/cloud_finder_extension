@@ -1,12 +1,19 @@
+/* style.css */
+/* Styling für die Cloud-Items im Popup */
+
 .cloud-item {
   display: flex;
   align-items: center;
-  padding: 5px;
-  gap: 5px;
+  padding: var(--spacing-sm);
+  gap: var(--spacing-sm);
+  color: var(--color-text);
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
 }
 
 .cloud-item:hover {
-  background-color: #f0f0f0;
+  background-color: var(--color-neutral-700);
 }
 
 .cloud-item img {

@@ -10,7 +10,7 @@ const html = fs.readFileSync(path.resolve(__dirname, '../popup.html'), 'utf8');
 document.body.innerHTML = html;
 
 // Now, require the script to execute it in the JSDOM context
-require('../popup.js');
+require('../src/popup.js');
 
 describe('Cloud Finder Extension', () => {
     test('should create a list of 10 cloud providers', () => {

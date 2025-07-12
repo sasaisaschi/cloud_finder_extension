@@ -1,23 +1,21 @@
+/* package.json */
 {
-  "name": "app",
+  "name": "cloud-finder-extension",
   "version": "1.0.0",
-  "description": "",
-  "main": "popup.js",
-  "directories": {
-    "test": "tests"
-  },
+  "description": "Chrome Extension zeigt Top-10 Cloud-Anbieter mit Logo & Link",
+  "author": "Sascha",
+  "license": "MIT",
+  "main": "src/popup.js",
   "scripts": {
     "test": "jest",
-    "build:css": "./node_modules/tailwindcss/lib/cli.js -o src/styles/tailwind.css"
+    "lint:js": "eslint src --ext .js",
+    "lint:css": "stylelint src/styles/**/*.css",
+    "build:css": "tailwindcss -i src/styles/tailwind.css -o src/styles/tailwind.build.css"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sasaisaschi/cloud_finder_extension.git"
+    "url": "https://github.com/sasaisaschi/cloud_finder_extension.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/sasaisaschi/cloud_finder_extension/issues"
   },
@@ -30,3 +28,4 @@
     "tailwindcss": "^4.1.11"
   }
 }
+

@@ -1,2 +1,10 @@
 node_modules
 .idea
+.eslintrc.js
+.gitignore
+.stylelintrc.js
+copilot_instructions.md
+package-lock.json
+jest.config.js
+tailwind.config.js
+tests
