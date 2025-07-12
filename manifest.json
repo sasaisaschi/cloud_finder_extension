@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Cloud Finder",
+    "version": "1.0",
+    "description": "A simple Chrome extension to find top cloud providers.",
+    "permissions": ["activeTab"],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "32": "public/favicon.ico"
+        }
+    },
+    "icons": {
+        "32": "public/favicon.ico"
+    }
+}

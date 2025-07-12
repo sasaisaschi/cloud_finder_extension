@@ -1,0 +1,32 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "popup.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest",
+    "build:css": "./node_modules/tailwindcss/lib/cli.js -o src/styles/tailwind.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sasaisaschi/cloud_finder_extension.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/sasaisaschi/cloud_finder_extension/issues"
+  },
+  "homepage": "https://github.com/sasaisaschi/cloud_finder_extension#readme",
+  "devDependencies": {
+    "eslint": "^9.31.0",
+    "jest": "^30.0.4",
+    "jest-environment-jsdom": "^30.0.4",
+    "stylelint": "^16.21.1",
+    "tailwindcss": "^4.1.11"
+  }
+}
