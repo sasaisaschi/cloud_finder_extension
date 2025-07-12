@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Finder Extension</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./src/styles/design_variables.css">
+    <style>
+        /* Grundlegendes Styling basierend auf deinen Design-Variablen (Vorschau / Fallback) */
+        body {
+            font-family: var(--font-family-body);
+            background-color: var(--color-background);
+            color: var(--color-text);
+            margin: 0;
+            padding: var(--spacing-lg);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        h1 {
+            font-family: var(--font-family-heading);
+            color: var(--color-primary);
+            text-shadow: var(--box-shadow-custom); /* Dein custom shadow als Text-Schatten für H1 */
+            margin-bottom: var(--spacing-md);
+        }
+        p {
+            font-size: var(--font-size-base);
+            margin-bottom: var(--spacing-lg);
+        }
+        .container {
+            background-color: var(--color-background-alt);
+            padding: var(--spacing-xl);
+            border-radius: var(--spacing-sm);
+            box-shadow: var(--box-shadow-custom);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Willkommen bei Cloud Finder Extension!</h1>
+        <p>Deine neue App wartet darauf, mit GitHub Copilot entwickelt zu werden.</p>
+        <p>Dieses Projekt wurde mit deinem persönlichen Design-System generiert.</p>
+        <p style="color: var(--color-secondary);">Viel Erfolg bei der Entwicklung!</p>
+    </div>
+    <div id="root"></div> </body>
+</html>
