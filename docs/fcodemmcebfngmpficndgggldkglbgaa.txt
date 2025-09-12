@@ -1,0 +1,3 @@
+fcodemmcebfngmpficndgggldkglbgaa
+
+chrome-extension://fcodemmcebfngmpficndgggldkglbgaa/manifest.json
