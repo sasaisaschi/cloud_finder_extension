@@ -1,0 +1,5 @@
+<!-- icon16.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+    <path d="M4 10h8a3 3 0 0 0 .18-5.995A4.5 4.5 0 0 0 4 8.5H3.5A2.5 2.5 0 0 0 1 11v.5a1.5 1.5 0 0 0 1.5 1.5H12"
+          fill="none" stroke="#fff" stroke-width="1.5"/>
+</svg>
