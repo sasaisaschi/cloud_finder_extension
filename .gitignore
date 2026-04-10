@@ -32,6 +32,7 @@ Thumbs.db
 # Misc
 *.tgz
 *.log
+.claude/
 
 # Keep package-lock.json and public/ in the repo for reproducibility and assets
 # (do not list package-lock.json or public/ here)
