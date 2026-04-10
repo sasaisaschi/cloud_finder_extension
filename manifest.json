@@ -3,7 +3,6 @@
     "name": "Cloud Finder",
     "version": "1.0",
     "description": "Top 10 cloud storage providers for free",
-    "permissions": ["activeTab"],
     "action": {
         "default_popup": "popup.html",
         "default_icon": {
